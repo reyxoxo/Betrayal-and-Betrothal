@@ -1,22 +1,36 @@
-﻿define Aurelienee = Character('Aurelienee')
-define Ren = Character('Ren')
-define Soren = Character('Soren')
-define Ashton = Character('Ashton')
-define Rei = Character('Rei')
-
+﻿define a = Character('Aureliene', color="#c8ffc8")
+define r = Character('Ren', color="#c8c8ff")
+define l = Character('Lucien', color="#ffc8c8")
+define a = Character('Arden', color="#ffffff")
 
 label start:
 
-    Ren "Wait up, Tom!"
-    Rei "Tom!"
-    Ren "I said wait up!"
-    Ren "...Tom?"
-    Rei "Boo!"
-    Ren "Yikes... not again."
-    Ren "Are you scared?"
-    Ren "Not at all."
-    Ren "Running off like that is dangerous, you know."
-    Rei "We are in the forest. We could get lost."
-    Ren "Okay okay mom. I won't do it again."
+    scene bg room_day
+    "It was raining heavily. The sound of raindrops hitting the window filled the room."
+    "Aureliene sat by the window, staring out at the gray sky."
+    "A knock came at the door."
 
-    return
+menu:
+    "Do you want to open the door?"
+    "Yes":
+        jump ye_path
+    "No":
+        jump no_path
+
+label no_path:
+    "The knock came again, more insistent this time."
+
+
+label ye_path:
+     "Sighing, Aureline stood up and opened the door."
+    r "My lady."
+    "Her guardsman, Ren looked as polished as ever. Shining impeccable armor, and stoic as ever." 
+    r "His Majesty is calling for your presence."
+    a "I see. Thank you, Ren."
+
+
+    scene bg throne_room_day
+    "The throne room was grand, with high ceilings and ornate decorations."
+    "King Lucien sat on his throne, looking as regal as ever."
+    l "Aureliene, my dear. I trust you are well."
+    a "Yes, Your Majesty. Thank you for asking."
