@@ -6,6 +6,10 @@ define ar = Character('Arden', color="#ffffff")
 define m = Character('Melinda', color="#c8ffff")
 define abc = Character('???', color="#ffb6c1")
 define v = Character('Vidir', color="#ffa500")
+define t = Character('Thomas', color="#d3d3d3")
+define j = Character('Jane', color="#d3d3d3" )
+
+#Story is an epic in the language of Caerwyn, translated to out modern day english
 
 label start:
 
@@ -184,14 +188,14 @@ label end_menu:
     r "In the meantime, you should try to rest. I'll be outside your door if you need anything."
     a "Thank you..."
     r "And... My lady. One more thing."
-    "Aureliene looked up at him.
-    "Yes..?"
+    "Aureliene looked up at him."
+    a "Yes..?"
     "Ren hesitated for a moment."
     "But then, on of his hands took hers, holding it gently."
     r "If you need anything... at all... please don't hesitate to call for me."
     "Aureliene looked at him, surprised by the gesture. She turned her head to hide the faint blush on her cheeks."
     "Ren released her hand."
-    "You must rest now. I assure you, we will find out who is responsible for this."
+    r "You must rest now. I assure you, we will find out who is responsible for this."
     "Aureliene nodded."
     a "Thank you."
     "Throught the corner of her eye, she caught Morgan's gaze- who was getting situated in the room across the hall."
@@ -226,12 +230,254 @@ label end_menu:
     "Aureliene looked at Arden."
     a "What of the others guests at the ball? Did you manage to question them all?"
     "Arden nodded."
-    "Yes, My lady. We have questioned all of them. These ten individuals were the only ones who had any sort of motive or opportunity to commit the crime."
+    ar "Yes, My lady. We have questioned all of them. These ten individuals were the only ones who had any sort of motive or opportunity to commit the crime."
     "Aureliene thought for a moment. Everyone who had been invited to the ball was a noble or dignitary. They all had something to gain from the king's death."
+    a "Very well. Let's begin."
+    "The first person stepped forward- a nervous looking servant."
+    ar "This is Thomas, one of the palace servants. He has been acting suspiciously since the incident."
+    "Aureliene nodded."
+    a "Thomas, can you tell us where you were during the ball?"
+    t "I-I was in the kitchen, preparing food for the guests."
+    a "Can anyone vouch for your whereabouts?"
+    t "N-no... I was alone."
+    "Aureliene was quiet for a moment."
+    a "Okay. Let's move on."
     
+    "In the clee next to Thomas's, a woman was crying, a player necklace in her hands. Her hands were clasped together as she prayed."
+    a "Excuse me.."
+    "The woman gasped, afraid."
+    abc "M- My lady... I swear, I- I didn't do it..."
+    ar "You wouldn't be here if you weren't one of the most suspicious people at the ball."
+    "The lady flinched."
+    abc "I- I promise- I- I didn't-"
+    a 'Arden. Please, calm yourself.'
+    "Aureliene looked at the woman."
+    a "What is your name? And where were you at the time of the king and queen's assasination?"
+    "I- I was serving the food at the time. My n- name is Jane."
+    j
     
-    
-    
+
+    "Aureliene paused, looking at the man in front of her."
+    "He was the only one restrained by chains, unlike the others."
+    "Ren moved to stand in front of her. The chained man glared at him, saying something in a language Aureliene didn't understand."
+    r "What.. is he saying?"
+    mr "Wait..."
+    "Morgan stepped forward, his eyes widening as he recognized the language."
+    mr "It's... Old Serathian. One of the languages used in Gallador."
+    "Gallador- the very kingdom that Morgan was heir to."
+    "Morgan asked the man a question, and the man replied in an almost sarcastic tone."
+    mr "He's saying... he's innocent. That he was framed."
+    "But it wasn't the language that caught Aureliene's attention. He was... different than most people Aureliene had seen. What should have been te whites of his eyes were almost blue, with a faint glow to them. Veins of the same color ran along his skin, visible even through the dirt and grime covering him."
+    "Not to mention, he was injured. Mustiple wounds in his legs were possibly what kept him from escaping, even from the chains as well."
+    a "What... are you?"
+    "The man glared at her."
+    "Morgan snapped something at him in Serathian, and the man, seemed surprised. First looking at Aureliene, then Morgan."
+    "The man's voice was quiet as he spoke."
+    abc "Your highness... forgive me... I did not know... Caerwynn tongue is not my own...I... I do not know much... "
+    a "That's okay. Can you tell us where you were during the ball?"
+    abc "I was... with... lords..."
+    "He looked back at Morgan, saying soemthing in Serathian. Morgan seemed surprised."
+    mr "He's saying... he was with others from Gallador. His name is Vidir. He is well known among the nobles. Even I have heard his name before... but it's only today I'm meeting him."
+    ar "He was also very violent. We had to chain him up numerous times. Even our best blacksmiths couldn't keep him chained. We had to sever part of his achilles tendon to keep him from escaping."
+    "The man muttered something under his breath."
+    a "What did he say?"
+    "He said that if he was able to heal himself, this wouldn't be happening. He was... also cursing the guard commander."
+    "Arden gave Vidir an angry look."
+    "Aureliene looked at Vidir. The sorceror tensed."
+    "Ren spoke, his voice skeptical."
+    r "He is a sorcerer... yet unable to heal himself?"
+    mr "That is just how magic works. It exists to help others, yet comes at the consequence of the user."
+    a "Morgan.. can you tell him that we're not holding him here just solely because he's a sorceror? He was probably here due to him being in close proximity with the king, like the others here."
+    "Morgan spoke to Vidir, who seemed to relax a bit."
+    v "I... I am sorry. I wish you luck... to find the killer."
+    "Aureliene nodded, trying to hold back her tears."
+    a "We will find the killer. And bring him to justice."
+
+    scene bg dinner_room
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
     return
