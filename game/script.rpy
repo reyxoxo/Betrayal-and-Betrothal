@@ -3,15 +3,85 @@ define r = Character('Ren', color="#c8c8ff")
 define l = Character('Lucien', color="#ffc8c8")
 define mr = Character('Morgan', color="#ffffc8")
 define ar = Character('Arden', color="#ffffff")
-define m = Character('Melinda', color="#c8ffff")
 define abc = Character('???', color="#ffb6c1")
 define v = Character('Vidir', color="#ffa500")
 define t = Character('Thomas', color="#d3d3d3")
 define j = Character('Jane', color="#d3d3d3" )
+define c = Character('Celia', color="#d453d3" )
 
 #Story is an epic in the language of Caerwyn, translated to out modern day english
 
 label start:
+    scene bg stairs_night
+    "The halls of Silvercrest castle were dimly lit with torches, light from the flickering torches bouncing off the stones."
+    "Aureliene snuck down the stairs leading to the south entrance of the palace. It was unguarded mostly, because little to no one knew of the passage."
+    "At least, it was unguarded most of the time."
+    "A figure smiled halfheartedly from where he was. Aureliene sighed."
+    a "Ren... why are you here?"
+    r "My lady. I must ask you the same thing."
+    "Aureliene sighed."
+    a "You are incorrigible."
+    "He laughed a bit."
+    r "And you, my lady, are very persistent."
+    a "Why are you here anyways?"
+    "Ren smiled dryly."
+    "His Majesty has suspicions you'd try to sneak out. He ordered me to guard the bottom gate."
+    "Aureliene groaned."
+    a "And here I was, thinking that I'd finally be able to see the city for myself."
+    r "You will. In due time."
+    "Ren looked at her, from where she was at the top of the stairs."
+    r "But now, go sleep."
+    a "I refuse."
+    "She went down the stairs, looking up at Ren defiantly."
+    a "I command you let me pass."
+    "He sighed."
+    r "My lady, I cannot-"
+    a "As princess to the kingdom of Elysumme, I demand you let me pass."
+    "Ren sighed."
+    r "Why... do you want to go so badly, anyways?"
+    a "I want to know what is outside."
+    "It was a simple answer, really, but it was exactly what she wanted to do."
+    "Aureliene's mother had died long after she was born, and her father kept her within the palace to be protected."
+    r "My lady."
+    "She gave him a pleading look."
+    a "Please..."
+    r "I will be defying the king's orders for this. The king. You father."
+    "Aureliene hesitated. She didn't want to defy her father... but she also wanted to see the world outside. How the villages were."
+    "She wanted to see the people she would one day rule over."
+    a "Just once. I won't ask again. I'll take the blame if someone finds us. You wont get in trouble. I swear it."
+    "Ren pursed his lips once. Oh, she was so stubborn."
+    "He turned to hold open the door to the south entrnce."
+    r "After you, My lady."
+
+
+    scene bg market_night
+    "Aureliene gazed at the lights in the market. She was in awe."
+    a "It's... beautiful..."
+    "Ren had left his armor in the palace as well- so now he looked like an ordinary village-goer."
+    r "It really is."
+    "Aureliene smiled, but felt a tugging on her dress."
+    abc "Would you be interested in trying a stuffed bun? It's a copper piece each!"
+    "She looked down to see a child, barely seven to eight years in age. She smiled."
+    a "Of course."
+    "She gave the child a copper piece, and she gave her a warm bun. Aureliene bit into it, savoring the flavor of the cheese and meat within the bun."
+    abc "Would your husband like one as well?"
+    "Aureliene nearly choked."
+    "Ren let out a quiet laugh, bending down to ruffle the child's hair."
+    "I would love to try one. And she's not my wife... just a friend."
+    "The child laughed, giving him a bun as well. He paid an extra copper as well. She gawked at him. Ren smiled."
+    r "Keep it. The bun is delicious."
+    "She looked at him in wonder." 
+    abc "Really?"
+    r "Of course. What's your name, little one?"
+    abc "My name is Celia!"
+    a "What a pretty name. I'm... Anna."
+    "She heard Ren sigh in relief behind her."
+    a "Do you make these buns yourself?"
+    c "No, mother makes them, and I sell them."
+    "Celia pointed to a figure standing near a stall."
+    c "She's over there!"
+    "Celia and her mother wee"
+
 
     scene bg room_day
     "It was raining heavily. The sound of raindrops hitting the window filled the room."
@@ -23,14 +93,14 @@ label start:
 
 menu:
     "Open the door":
-        jump ye_path
+        jump yes_path
     "Stay in bed":
         jump no_path
 
 label no_path:
     "The knock came again, more insistent this time."
 
-label ye_path:
+label yes_path:
     "Sighing, Aureline stood up and opened the door."
     r "My lady."
     "Ren looked as polished as alwyas. Shining impeccable armor, and stoic. Like he always was." 
@@ -48,10 +118,9 @@ label ye_path:
     l "There have been multiple reports of criminal activity occuring, especially in the city. I want you to stay here, and not leave the palace grounds."
     a "But Father, I-"
     l "I understand your desire to go beyond the palace. However, your safety is my top priority. As both my daughter and hair to the crown, we must keep you safe"
-    m "Aureliene. Listen to your father."
-    a "Mother, please... I can protect myself... and I have Ren to protect me too. I told the nobles I would be coming to-"
-    m "We've already told them you can come. You mustn't go, not at this time. When we know more about these threats, neutralize them, you will be able to go wherever you wish. Just... not now."
-    m "Please understand, dear. We want you safe."
+    a "Father, please... I can protect myself... and I have Ren to protect me too. I told the nobles I would be coming to-"
+    l "I've already told them you can come. You mustn't go, not at this time. When we know more about these threats, neutralize them, you will be able to go wherever you wish. Just... not now."
+    l "Please understand, dear. We want you safe."
     "Aureliene sighed."
     a "...I understand. I'll stay here for now."
     l "Good." 
@@ -153,17 +222,11 @@ label end_menu:
     abc "What do you mean, I can't leave?!"
     abc "My daughter is at home! I need to see her!"
     a "Please, everyone remain calm. We need to get to the bottom of this."
-    "A servant shrieked from the other side of the room."
-    "The Queen! She's collapsed!"
-    "Aureliene's heart pounded in her chest. She rushed over to her mother's side."
-    "But when she pressed her fingers to the queen's neck, she found no pulse."
-    "Aureliene's world seemed to shatter around her."
-    a "Mother..."
     "Tears welled up in her eyes as she looked around at the chaos."    
     "Ren stood by her side, his expression grim."
     r "My lady. We will find out who is responsible for this."
     "She kept her composure, though inside she was breaking."
-    a "We have to. For Father and Mother."
+    a "We have to. For Father. And for the people."
     "Arden nodded."
     ar "Escort the guests to any and all empty rooms we have. No one is to leave. Ren, stay with the princess."
     r "Yes, Commander."
@@ -184,6 +247,14 @@ label end_menu:
     a "I can't believe this is happening..."
     r "My lady. We will find out who did this. I promise you."
     "Aureliene nodded, trying to steady her breathing."
+    "Just as they got to the top of the stairs, the bitter smell of copper."
+    "Aureliene gasped, grabbing onto Ren's arm in fear."
+    "The hall was littered with dead bodies of guardsmen."
+    "Ren caught her, just before she collapsed from fear."
+    r "Don't look."
+    "She clung to him, fear rising within her at the sight of the bodies."
+    "Distantly, she could feel Ren leading her away from the carnage."
+
     r "Judging from the number of people here, it will at least take a day or two to figure out a list of potential suspects."
     r "In the meantime, you should try to rest. I'll be outside your door if you need anything."
     a "Thank you..."
@@ -243,7 +314,7 @@ label end_menu:
     "Aureliene was quiet for a moment."
     a "Okay. Let's move on."
     
-    "In the clee next to Thomas's, a woman was crying, a player necklace in her hands. Her hands were clasped together as she prayed."
+    "In the cell next to Thomas's, a woman was crying, a player necklace in her hands. Her hands were clasped together as she prayed."
     a "Excuse me.."
     "The woman gasped, afraid."
     abc "M- My lady... I swear, I- I didn't do it..."
@@ -253,8 +324,16 @@ label end_menu:
     a 'Arden. Please, calm yourself.'
     "Aureliene looked at the woman."
     a "What is your name? And where were you at the time of the king and queen's assasination?"
-    "I- I was serving the food at the time. My n- name is Jane."
-    j
+    j "I- I was serving the food at the time. My n- name is Jane."
+    a "If you were servin food, did you see Thomas at any time last night? Or did he see you?"
+    j "N- No, your highness... I- I was in the west wing's kitchen... I- I believe he was in the south wing..."
+    "She continues to sob." 
+    j "P- Please don't kill me... I- I have two young children waiting for me..."
+    a "I won't kill you unless you give me reason to."
+    "Jane trembled, her gaze darting down, as she sobbed."
+    "Aureliene looked at her sympathetically, but she new she had to move onto the next people."
+
+    "The third and "
     
 
     "Aureliene paused, looking at the man in front of her."
@@ -267,7 +346,8 @@ label end_menu:
     "Gallador- the very kingdom that Morgan was heir to."
     "Morgan asked the man a question, and the man replied in an almost sarcastic tone."
     mr "He's saying... he's innocent. That he was framed."
-    "But it wasn't the language that caught Aureliene's attention. He was... different than most people Aureliene had seen. What should have been te whites of his eyes were almost blue, with a faint glow to them. Veins of the same color ran along his skin, visible even through the dirt and grime covering him."
+    "But it wasn't the language that caught Aureliene's attention. He was... different than most people Aureliene had seen."
+    "What should have been te whites of his eyes were almost blue, with a faint glow to them. Veins of the same color ran along his skin, visible even through the dirt and grime covering him."
     "Not to mention, he was injured. Mustiple wounds in his legs were possibly what kept him from escaping, even from the chains as well."
     a "What... are you?"
     "The man glared at her."
