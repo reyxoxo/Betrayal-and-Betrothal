@@ -60,15 +60,15 @@ label start:
     "Ren had left his armor in the palace as well- so now he looked like an ordinary village-goer."
     r "It really is."
     "Aureliene smiled, but felt a tugging on her dress."
-    abc "Would you be interested in trying a stuffed bun? It's a copper piece each!"
+    abc "Would you like a stuffed bun? It's a copper piece each!"
     "She looked down to see a child, barely seven to eight years in age. She smiled."
-    a "Of course."
+    a "For sure."
     "She gave the child a copper piece, and she gave her a warm bun. Aureliene bit into it, savoring the flavor of the cheese and meat within the bun."
     abc "Would your husband like one as well?"
     "Aureliene nearly choked."
     "Ren let out a quiet laugh, bending down to ruffle the child's hair."
-    "I would love to try one. And she's not my wife... just a friend."
-    "The child laughed, giving him a bun as well. He paid an extra copper as well. She gawked at him. Ren smiled."
+    r "I would love to try one. And she's not my wife... just a friend."
+    "The child smiled, giving him a bun as well. He paid an extra copper as well. She gawked at him. Ren smiled."
     r "Keep it. The bun is delicious."
     "She looked at him in wonder." 
     abc "Really?"
@@ -80,7 +80,26 @@ label start:
     c "No, mother makes them, and I sell them."
     "Celia pointed to a figure standing near a stall."
     c "She's over there!"
-    "Celia and her mother wee"
+    "Celia's mother was near a stall, selling buns to the passerbys."
+    "She smiled at them. Aureline smiled back."
+    c "Come on!"
+    "Celia grabbed the sleeve of Aureliene's dress, pulling her with her. Run cracked a smile, following closely behind."
+    "Celia's mother turned to them, a smile on her face."
+    "Good evening, my lady, my lord. I saw you conversing with Celia earlier. I hope she wasn't bothering you."
+    a "Not at all. She was very pleasant to talk to. She's a sweet girl."
+    "Celia smiled up at her."
+    a "And those bus you made... delicious. Will you share the recipie?"
+    "Ah, of course!"
+    "Celia's mother handed Aureliene a small paper with the recipie on it."
+    a "Thank you so much!"
+    "She smiled. Of course. My pleasure."
+
+    "Aureliene sat near a bridge, Ren at her side. He watched as she admired the sea from above. Yet all peace was interrupted when there were noises of anguish near the town square."
+    "Aureliene stood up, walking to the site of the scene. Guardsmen were trying to drag a man away from the square."
+    
+
+
+
 
 
     scene bg room_day
@@ -113,7 +132,7 @@ label yes_path:
     "King Lucien sat on his throne, looking as regal as ever."
     l "Aureliene, my dear. I trust you are well."
     a "Yes, Your Majesty. Thank you for asking."
-    l "Good. I have a task for you."
+    l "Good. I wish to speak to you of something occuring in our kingdom."
     "She was curious as to what her father was going to ask of her."
     l "There have been multiple reports of criminal activity occuring, especially in the city. I want you to stay here, and not leave the palace grounds."
     a "But Father, I-"
@@ -254,6 +273,9 @@ label end_menu:
     r "Don't look."
     "She clung to him, fear rising within her at the sight of the bodies."
     "Distantly, she could feel Ren leading her away from the carnage."
+    "Ren led her back dwon the hall, to another set of rooms."
+    r "Rest here for now. We'll need to seal that hallway for now, "
+
 
     r "Judging from the number of people here, it will at least take a day or two to figure out a list of potential suspects."
     r "In the meantime, you should try to rest. I'll be outside your door if you need anything."
@@ -333,14 +355,13 @@ label end_menu:
     "Jane trembled, her gaze darting down, as she sobbed."
     "Aureliene looked at her sympathetically, but she new she had to move onto the next people."
 
-    "The third and "
+    "The third and fourth suspects were also similar in nature to the second. Claiming they had families and lives to guard. That they weren't the cause of this."
     
 
     "Aureliene paused, looking at the man in front of her."
     "He was the only one restrained by chains, unlike the others."
     "Ren moved to stand in front of her. The chained man glared at him, saying something in a language Aureliene didn't understand."
     r "What.. is he saying?"
-    mr "Wait..."
     "Morgan stepped forward, his eyes widening as he recognized the language."
     mr "It's... Old Serathian. One of the languages used in Gallador."
     "Gallador- the very kingdom that Morgan was heir to."
@@ -374,9 +395,17 @@ label end_menu:
     a "We will find the killer. And bring him to justice."
 
     scene bg dinner_room
+    "The lunch was especially awkward. With no one to occupy the head chair- the chair that belonged to the king- the room felt much more poignant."
+    "None of them touched their food. Arden and Ren were standing by the back of the room, despite the fact that Aureliene had invited them to eat with them. Vidir took awkward sips of his water, while Morgan and Aureliene sat there... unsure of what to do."
+    
+    menu:
+    "Speak":
+       jump speak_lunch
+    "Stay Silent":
+        jump silent_lunch
 
-
-
+    label silent_lunch
+    scene bc dinner_room
 
 
 
