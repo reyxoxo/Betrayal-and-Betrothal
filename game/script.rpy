@@ -94,9 +94,15 @@ label start:
     a "Thank you so much!"
     "She smiled. Of course. My pleasure."
 
+    scene bg harbor_night
     "Aureliene sat near a bridge, Ren at her side. He watched as she admired the sea from above. Yet all peace was interrupted when there were noises of anguish near the town square."
-    "Aureliene stood up, walking to the site of the scene. Guardsmen were trying to drag a man away from the square."
-    
+    "Ren stood up, walking to the site of the scene. Guardsmen were trying to drag a man away from the square."
+    "Aureliene placed a hand on his shoulder to prevent her from going forward into the fray."
+    r "They'll recognize you. Don't."
+    "He looked at a man who was pleading for the guards to not take his brother away. But the guards did so anyways. Aureliene bent down next to him."
+    a "Sir... may I ask wat happened..?"
+    abc "They took my brother..."
+
 
 
 
@@ -396,7 +402,7 @@ label end_menu:
 
     scene bg dinner_room
     "The lunch was especially awkward. With no one to occupy the head chair- the chair that belonged to the king- the room felt much more poignant."
-    "None of them touched their food. Arden and Ren were standing by the back of the room, despite the fact that Aureliene had invited them to eat with them. Vidir took awkward sips of his water, while Morgan and Aureliene sat there... unsure of what to do."
+    "None of them touched their food. Arden and Ren were standing by the back of the room, despite the fact that Aureliene had invited them numerous to eat with them. Vidir took awkward sips of his water, while Morgan and Aureliene sat there... unsure of what to do."
     
     menu:
     "Speak":
@@ -405,13 +411,30 @@ label end_menu:
         jump silent_lunch
 
     label silent_lunch
-    scene bc dinner_room
+    scene bg dinner_room
+    "The awkward silence continued. Aureliene started to eat her food slowly, as did Morgan."
+
+
+    label speak_lunch
+    scene bg dinner_room
+    a ""
 
 
 
-
-
-
+    a "Vidir... may I ask you something."
+    "Vidir seemed to tense. But he nodded."
+    v "Yes, My lady."
+    a "How... how did you control the magic..? I've always wondered..."
+    v "Ah... er..."
+    "Vidir seems to steel himself, still looking nervous."
+    v "It's... it's like breath. Easy. Slow. I..."
+    "Vidir looks at his hand, and the blue mist emamating from it."
+    "He looks at Morgan, then back down at his hands again. Morgan looks ot him, bumping his shoulder with his, saying something to Vidir in Serathian. Vidir replies in a quiet tone."
+    m "He's saying that he was trained at a young age to harness magic. If they don't do it properly... it can lead to death. That's why the first generations of magesmiths died."
+    "Vidir sighed."
+    v "That's not told in the stories here, no..?"
+    a "No... not at all."
+    
 
 
 
