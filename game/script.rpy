@@ -8,6 +8,7 @@ define v = Character('Vidir', color="#ffa500")
 define t = Character('Thomas', color="#d3d3d3")
 define j = Character('Jane', color="#d3d3d3" )
 define c = Character('Celia', color="#d453d3" )
+define cm = Character('Medeline', color="#d453d3" )
 
 #Story is an epic in the language of Caerwyn, translated to out modern day english
 
@@ -89,23 +90,76 @@ label start:
     a "Not at all. She was very pleasant to talk to. She's a sweet girl."
     "Celia smiled up at her."
     a "And those bus you made... delicious. Will you share the recipie?"
-    "Ah, of course!"
-    "Celia's mother handed Aureliene a small paper with the recipie on it."
+    cm "Ah, of course!"
+    "She handed Aureliene a small paper with the recipie on it."
     a "Thank you so much!"
-    "She smiled. Of course. My pleasure."
+    "She smiled." 
+    cm "Of course. My pleasure."
+    "Ren led Aureliene through the market, watching her with a small smile as she admired the artisans and vendors selling their wares."
+    "By the end of the night, she had a small basket filled with little trinkets and souvenirs- a small carved wooden horse, a necklace with a pendant shaped like a leaf, and a small pouch of scented herbs."
+    a "This has been... wonderful. Thank you, Ren."
+    "Aureliene smiled at him warmly. Ren give her a small smile, but Aureliene didn't miss the faint redness on his cheeks."
+    r "I'm glad you enjoyed it, My lady."
+    a "I wish we could stay longer..."
+    r "We can't. We must return before anyone notices your absence."
+    a "There's still time until dawn..."
+    "Ren looked at her, then sighed."
+    r "Only a few more minutes."
+    "Aureliene huged him from the side. Ren turned his head away, blushing slightly."
+    a "Thank you!!!"
+    "Yet all peace was interrupted when there were noises of anguish near the town square."
+    "Ren gently released her, watching the scene. Guardsmen were trying to drag a man away from the square."
+    a "What..?"
+    "There was a man trying to fight against guardsmen who were trying to take him away. Ren whispered into her ear."
+    r "My lady. Come. We'll get recognized."
+    a "Wait..."
+    "Aureliene looked at the struggling man, then back at Ren."
+    "Ren looked at the nearest stall owner."
+    r "Sir, Do you know him?"
+    abc "Not personally... but there were rumours circulating that he had been stealing from the market stalls. Not only that..."
+    "His voice lowered."
+    abc "He was seen speaking with criminals in the area. And he had biteroot in his possession."
+    a "Biteroot..."
+    "Biteroot was a dangerous plant found in the wilderness. It had been illegal to posses it in the kingdom for centuries, due to its use in poisons and black magic It caused strong hallucinations to people who inhaled it's smell."
+    r "Is that so..."
+    "Aureliene looked up at Ren. He seemed to be thinking the same thing as her. So many centuries... but why was it resurfacing now?"
+    r "My lady. We must leave."
+    "Aureliene swallowed. He had allowed her to stay out longer than he should have already. But now something seemed even more wrong. It didn't feel right to stay out anymore."
+    a "Right..."
+    "Aureliene gave the marketsman a small nod, before following Ren back to the south gates of the palace, where they ducked behind a bush, watching the guards."
+    r "They will change shifts within a few minutes. We should sneak inside then."
+    "Aureliene nodded."
+    "After a few minutes, the guards changed shifts. Ren led Aureliene back inside the palace, going up the stairs to her chambers."
+    "As they neared the gates, a voice called out."
+    abc "Halt! Who goes there?"
+    "Ren hurried Aureliene inside the castle, rushing to get her inside."
+    "The guard kept searching, but the two managed to slip past unnoticed."
 
-    scene bg harbor_night
-    "Aureliene sat near a bridge, Ren at her side. He watched as she admired the sea from above. Yet all peace was interrupted when there were noises of anguish near the town square."
-    "Ren stood up, walking to the site of the scene. Guardsmen were trying to drag a man away from the square."
-    "Aureliene placed a hand on his shoulder to prevent her from going forward into the fray."
-    r "They'll recognize you. Don't."
-    "He looked at a man who was pleading for the guards to not take his brother away. But the guards did so anyways. Aureliene bent down next to him."
-    a "Sir... may I ask wat happened..?"
-    abc "They took my brother..."
+
+    scene bg hallway_night
+    "Once they were inside the castle Aureliene watched Ren don his armor. He picked up his sword again, nodding."
+    r "Let's go."
+    "She nodded."
+    "The walk back to Aureliene's room was quiet. Ren followed her up the stairs."
 
 
-
-
+    "Ren opened the door of her room for her."
+    a "Thank you."
+    "Aureliene turned, looking up at her guardsman. He didn't quite look her in the eyes."
+    a "Ren..."
+    r "Yes, My lady?"
+    a "Thank you... for tonight."
+    "Ren smiled a bit."
+    r "You always say that."
+    "His hand reached out to adjust her cloak, just a little. his hand lingered for a moment longer than necessary."
+    r "You should get some rest now. You must be tired."
+    "She nodded. He should get some sleep too, she thought."
+    "But that was very occaacsional. Since Ren was her personal guardsman, he often had to stay up late into the night, guarding her room."
+    a "Goodnight, Ren."
+    r "Goodnight, My lady."
+    "Ren closed the doors, and she locked them behind him."
+    "Her hands trembled slightly as she undid her cloak, placing it on a nearby chair. It had once belonged to him. He had given it to her on an impromptu trip to the city a few months ago- back when the snow was still falling. She had forgotten her own cloak, so he had given her his own- yet never asked for it back."
+    "Aureliene sighed, climbing into bed. She stared at the ceiling for a moment."
 
 
     scene bg room_day
@@ -126,7 +180,7 @@ label no_path:
     "The knock came again, more insistent this time."
 
 label yes_path:
-    "Sighing, Aureline stood up and opened the door."
+    "Aureline stood up and opened the door, confused. But it was only Ren who was at the door."
     r "My lady."
     "Ren looked as polished as alwyas. Shining impeccable armor, and stoic. Like he always was." 
     r "His Majesty is calling for your presence."
@@ -142,7 +196,7 @@ label yes_path:
     "She was curious as to what her father was going to ask of her."
     l "There have been multiple reports of criminal activity occuring, especially in the city. I want you to stay here, and not leave the palace grounds."
     a "But Father, I-"
-    l "I understand your desire to go beyond the palace. However, your safety is my top priority. As both my daughter and hair to the crown, we must keep you safe"
+    l "I understand your desire to go beyond the palace. However, your safety is my top priority. As both my daughter and hair to the crown, we must keep you safe."
     a "Father, please... I can protect myself... and I have Ren to protect me too. I told the nobles I would be coming to-"
     l "I've already told them you can come. You mustn't go, not at this time. When we know more about these threats, neutralize them, you will be able to go wherever you wish. Just... not now."
     l "Please understand, dear. We want you safe."
@@ -434,7 +488,8 @@ label end_menu:
     "Vidir sighed."
     v "That's not told in the stories here, no..?"
     a "No... not at all."
-    
+    "The table went silent again."
+
 
 
 
