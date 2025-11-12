@@ -96,11 +96,6 @@ label start:
     "She smiled." 
     cm "Of course. My pleasure."
     "Ren led Aureliene through the market, watching her with a small smile as she admired the artisans and vendors selling their wares."
-
-
-
-
-    
     "By the end of the night, she had a small basket filled with little trinkets and souvenirs- a small carved wooden horse, a necklace with a pendant shaped like a leaf, and a small pouch of scented herbs."
     a "This has been... wonderful. Thank you, Ren."
     "Aureliene smiled at him warmly. Ren give her a small smile, but Aureliene didn't miss the faint redness on his cheeks."
@@ -302,7 +297,7 @@ label end_menu:
     a "What?!"
     "The king, her father, was dead."
     "They all rushed inside."
-    "The Guard Commander, Arden barked out an order, telling ryone to stay in the ballroom."
+    "The Guard Commander, Arden barked out an order, telling everyone to stay in the ballroom."
     "Everyone looked around, confused and scared. Panic was starting to set in."
     abc "What do you mean, I can't leave?!"
     abc "My daughter is at home! I need to see her!"
@@ -340,8 +335,19 @@ label end_menu:
     "She clung to him, fear rising within her at the sight of the bodies."
     "Distantly, she could feel Ren leading her away from the carnage."
     "Ren led her back dwon the hall, to another set of rooms."
-    r "Rest here for now. We'll need to seal that hallway for now, "
-
+    r "Rest here for now. We'll need to seal that hallway for now."
+    a "What about the others?"
+    r "The commander and the others are handling it. You just need to rest."
+    "Ren led her away, leading her to a different area of the castle."
+    scene bg room_day
+    "Ren led Aureline into a room within one of the castle's towers."
+    "Aureliene followed him hesitantly. She was unaware of if there was a room in the tower, but she trusted Ren."
+    "Enough to hope he wasn't the one behind all this."
+    "Ren led her to a set of double doors."
+    r "There are rooms here for royals ond nobles, in case of emergencies. You can stay here for now."
+    "He hesitated for a moment."
+    r "I will be here to guard you as well."
+    
 
     r "Judging from the number of people here, it will at least take a day or two to figure out a list of potential suspects."
     r "In the meantime, you should try to rest. I'll be outside your door if you need anything."
@@ -422,6 +428,7 @@ label end_menu:
     "Aureliene looked at her sympathetically, but she new she had to move onto the next people."
 
     "The third and fourth suspects were also similar in nature to the second. Claiming they had families and lives to guard. That they weren't the cause of this."
+    "Aureliene didn't know if they were lying or not. All the people who went to the ball were still within the castle. No one had been allowed to leave that night."
     
 
     "Aureliene paused, looking at the man in front of her."
@@ -477,10 +484,6 @@ label end_menu:
 
     label speak_lunch
     scene bg dinner_room
-    a ""
-
-
-
     a "Vidir... may I ask you something."
     "Vidir seemed to tense. But he nodded."
     v "Yes, My lady."
@@ -508,6 +511,8 @@ label end_menu:
     a "What is it?"
     "Aureliene looked at them both, confused."
     mr "Nothing. Nothing at all."
+    "They were all silent for the rest of the meal."
+
 
 
 
