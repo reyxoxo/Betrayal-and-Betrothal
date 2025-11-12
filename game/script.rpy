@@ -96,6 +96,11 @@ label start:
     "She smiled." 
     cm "Of course. My pleasure."
     "Ren led Aureliene through the market, watching her with a small smile as she admired the artisans and vendors selling their wares."
+
+
+
+
+    
     "By the end of the night, she had a small basket filled with little trinkets and souvenirs- a small carved wooden horse, a necklace with a pendant shaped like a leaf, and a small pouch of scented herbs."
     a "This has been... wonderful. Thank you, Ren."
     "Aureliene smiled at him warmly. Ren give her a small smile, but Aureliene didn't miss the faint redness on his cheeks."
@@ -159,7 +164,8 @@ label start:
     r "Goodnight, My lady."
     "Ren closed the doors, and she locked them behind him."
     "Her hands trembled slightly as she undid her cloak, placing it on a nearby chair. It had once belonged to him. He had given it to her on an impromptu trip to the city a few months ago- back when the snow was still falling. She had forgotten her own cloak, so he had given her his own- yet never asked for it back."
-    "Aureliene sighed, climbing into bed. She stared at the ceiling for a moment."
+    "Aureliene sighed, climbing into bed. She stared at the ceiling for a moment. She had barely been outside for more than a few hours, yet it felt like a lifetime ago."
+    "What a night..."
 
 
     scene bg room_day
@@ -484,13 +490,24 @@ label end_menu:
     v "It's... it's like breath. Easy. Slow. I..."
     "Vidir looks at his hand, and the blue mist emamating from it."
     "He looks at Morgan, then back down at his hands again. Morgan looks ot him, bumping his shoulder with his, saying something to Vidir in Serathian. Vidir replies in a quiet tone."
-    m "He's saying that he was trained at a young age to harness magic. If they don't do it properly... it can lead to death. That's why the first generations of magesmiths died."
+    mr "He's saying that he was trained at a young age to harness magic. If they don't do it properly... it can lead to death. That's why the first generations of magesmiths died."
     "Vidir sighed."
-    v "That's not told in the stories here, no..?"
+    mr "That's not in the stories."
     a "No... not at all."
     "The table went silent again."
-
-
+    v "I... I apologize. I did not mean to make you uncomfortable, My lady."
+    a "No... it's alright. I just... I've never met a sorceror before. It's... fascinating."
+    v "Thank you, My lady."
+    "Aureline sighed."
+    a "I've just never thought about... how magic works, nor about who the people are using it."
+    "Morgan nodded, picking at his food."
+    mr "Yes... it's easy to forget that behind the magic, there are people. Just like you and me."
+    a "Yes..."
+    "Aureliene looked down at her food, poking at it with her fork. She looked back at Ren, who was standing at Arden's side, looking as stoic as ever."
+    "Vidir murmured something to Morgan, who then choked on his food."
+    a "What is it?"
+    "Aureliene looked at them both, confused."
+    mr "Nothing. Nothing at all."
 
 
 
