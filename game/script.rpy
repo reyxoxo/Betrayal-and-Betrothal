@@ -8,7 +8,7 @@ define v = Character('Vidir', color="#ffa500")
 define t = Character('Thomas', color="#d3d3d3")
 define j = Character('Jane', color="#d3d3d3" )
 define c = Character('Celia', color="#d453d3" )
-define cm = Character('Medeline', color="#d453d3" )
+define cm = Character('Madeline', color="#d453d3" )
 
 #Story is an epic in the language of Caerwyn, translated to out modern day english
 
@@ -26,7 +26,7 @@ label start:
     r "And you, my lady, are very persistent."
     a "Why are you here anyways?"
     "Ren smiled dryly."
-    "His Majesty has suspicions you'd try to sneak out. He ordered me to guard the bottom gate."
+    r "His Majesty has suspicions you'd try to sneak out. He ordered me to guard the bottom gate."
     "Aureliene groaned."
     a "And here I was, thinking that I'd finally be able to see the city for myself."
     r "You will. In due time."
@@ -327,13 +327,12 @@ label end_menu:
     a "I can't believe this is happening..."
     r "My lady. We will find out who did this. I promise you."
     "Aureliene nodded, trying to steady her breathing."
-    "Just as they got to the top of the stairs, the bitter smell of copper."
+    "Just as they got to the top of the stairs, the bitter smell of copper wafted thruogh the air."
     "Aureliene gasped, grabbing onto Ren's arm in fear."
     "The hall was littered with dead bodies of guardsmen."
     "Ren caught her, just before she collapsed from fear."
     r "Don't look."
     "She clung to him, fear rising within her at the sight of the bodies."
-    "Distantly, she could feel Ren leading her away from the carnage."
     "Ren led her back dwon the hall, to another set of rooms."
     r "Rest here for now. We'll need to seal that hallway for now."
     a "What about the others?"
@@ -347,8 +346,10 @@ label end_menu:
     r "There are rooms here for royals ond nobles, in case of emergencies. You can stay here for now."
     "He hesitated for a moment."
     r "I will be here to guard you as well."
-    
-
+    "Aurelinene nodded, grateful for his presence."
+    a "Thank you, Ren."
+    "Ren gave her a small nod."
+    "Just before she closed the door, he spoke again."
     r "Judging from the number of people here, it will at least take a day or two to figure out a list of potential suspects."
     r "In the meantime, you should try to rest. I'll be outside your door if you need anything."
     a "Thank you..."
@@ -395,7 +396,7 @@ label end_menu:
     "Aureliene looked at Arden."
     a "What of the others guests at the ball? Did you manage to question them all?"
     "Arden nodded."
-    ar "Yes, My lady. We have questioned all of them. These ten individuals were the only ones who had any sort of motive or opportunity to commit the crime."
+    ar "Yes, My lady. We have questioned all of them. These few individuals were the only ones who had any sort of motive or opportunity to commit the crime."
     "Aureliene thought for a moment. Everyone who had been invited to the ball was a noble or dignitary. They all had something to gain from the king's death."
     a "Very well. Let's begin."
     "The first person stepped forward- a nervous looking servant."
@@ -408,7 +409,7 @@ label end_menu:
     "Aureliene was quiet for a moment."
     a "Okay. Let's move on."
     
-    "In the cell next to Thomas's, a woman was crying, a player necklace in her hands. Her hands were clasped together as she prayed."
+    "In the cell next to Thomas's, a woman was crying, a prayer necklace in her hands. Her hands were clasped together as she prayed."
     a "Excuse me.."
     "The woman gasped, afraid."
     abc "M- My lady... I swear, I- I didn't do it..."
@@ -429,15 +430,17 @@ label end_menu:
 
     "The third and fourth suspects were also similar in nature to the second. Claiming they had families and lives to guard. That they weren't the cause of this."
     "Aureliene didn't know if they were lying or not. All the people who went to the ball were still within the castle. No one had been allowed to leave that night."
-    
-
+    "The rest of the interrogation went on for several hours."
+    a "..."
+    "Eventually, they reached the last cell. A small cell with only a small window in the corner."
     "Aureliene paused, looking at the man in front of her."
     "He was the only one restrained by chains, unlike the others."
     "Ren moved to stand in front of her. The chained man glared at him, saying something in a language Aureliene didn't understand."
     r "What.. is he saying?"
     "Morgan stepped forward, his eyes widening as he recognized the language."
-    mr "It's... Old Serathian. One of the languages used in Gallador."
+    mr "It's... Old Serathian. One of the oldest languages used in Gallador."
     "Gallador- the very kingdom that Morgan was heir to."
+    mr "I thought... it was a dead language. Rumor around Gallador said otherwise, though. I suppose they were right."
     "Morgan asked the man a question, and the man replied in an almost sarcastic tone."
     mr "He's saying... he's innocent. That he was framed."
     "But it wasn't the language that caught Aureliene's attention. He was... different than most people Aureliene had seen."
@@ -445,17 +448,25 @@ label end_menu:
     "Not to mention, he was injured. Mustiple wounds in his legs were possibly what kept him from escaping, even from the chains as well."
     a "What... are you?"
     "The man glared at her."
-    "Morgan snapped something at him in Serathian, and the man, seemed surprised. First looking at Aureliene, then Morgan."
-    "The man's voice was quiet as he spoke."
-    abc "Your highness... forgive me... I did not know... Caerwynn tongue is not my own...I... I do not know much... "
+    "Morgan snapped something at him in Serathian, and the man, seemed surprised. First looking at Aureliene, then Morgan. He barked out a laugh."
+    abc "Fool. You think I would be nice to her solely because she's the crown princess?"
+    a "Who is he?"
+    "Morgan looked down at him in distaste."
+    m "Some slave of a lord, maybe. His clothes are too ornate to be a peasant's."
+    abc "Yes, some slave. That's all I am. Because of your rules."
+    m "I'll knock your face in if you don't shut up."
+    "The threat made the man "
+
+
+    abc "Your highness... forgive me... I did not know..."
     a "That's okay. Can you tell us where you were during the ball?"
     abc "I was... with... lords..."
     "He looked back at Morgan, saying soemthing in Serathian. Morgan seemed surprised."
     mr "He's saying... he was with others from Gallador. His name is Vidir. He is well known among the nobles. Even I have heard his name before... but it's only today I'm meeting him."
-    ar "He was also very violent. We had to chain him up numerous times. Even our best blacksmiths couldn't keep him chained. We had to sever part of his achilles tendon to keep him from escaping."
+    ar "He was also very violent. We had to chain him up numerous times. Even our best blacksmiths couldn't keep him chained.."
     "The man muttered something under his breath."
     a "What did he say?"
-    "He said that if he was able to heal himself, this wouldn't be happening. He was... also cursing the guard commander."
+    mr "He said that if he was able to heal himself, this wouldn't be happening. He was... also cursing the guard commander."
     "Arden gave Vidir an angry look."
     "Aureliene looked at Vidir. The sorceror tensed."
     "Ren spoke, his voice skeptical."
@@ -484,7 +495,7 @@ label end_menu:
 
     label speak_lunch
     scene bg dinner_room
-    a "Vidir... may I ask you something."
+    a "Vidir... may I ask you something?"
     "Vidir seemed to tense. But he nodded."
     v "Yes, My lady."
     a "How... how did you control the magic..? I've always wondered..."
@@ -511,7 +522,25 @@ label end_menu:
     a "What is it?"
     "Aureliene looked at them both, confused."
     mr "Nothing. Nothing at all."
-    "They were all silent for the rest of the meal."
+    "Servants continue "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "Later, that evening, Aureliene was in her chambers, staring out the window at the darkening sky."
+    "She needed to find out who did this. For her parents. For the kingdom."
+    "She figured that Ren was right- it would take at least a day or two to figure out a list of suspects."
+    "A"
 
 
 
