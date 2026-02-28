@@ -455,28 +455,15 @@ label end_menu:
     m "Some slave of a lord, maybe. His clothes are too ornate to be a peasant's."
     abc "Yes, some slave. That's all I am. Because of your rules."
     m "I'll knock your face in if you don't shut up."
-    "The threat made the man "
-
-
-    abc "Your highness... forgive me... I did not know..."
-    a "That's okay. Can you tell us where you were during the ball?"
-    abc "I was... with... lords..."
-    "He looked back at Morgan, saying soemthing in Serathian. Morgan seemed surprised."
-    mr "He's saying... he was with others from Gallador. His name is Vidir. He is well known among the nobles. Even I have heard his name before... but it's only today I'm meeting him."
-    ar "He was also very violent. We had to chain him up numerous times. Even our best blacksmiths couldn't keep him chained.."
-    "The man muttered something under his breath."
-    a "What did he say?"
-    mr "He said that if he was able to heal himself, this wouldn't be happening. He was... also cursing the guard commander."
-    "Arden gave Vidir an angry look."
-    "Aureliene looked at Vidir. The sorceror tensed."
-    "Ren spoke, his voice skeptical."
-    r "He is a sorcerer... yet unable to heal himself?"
-    mr "That is just how magic works. It exists to help others, yet comes at the consequence of the user."
-    a "Morgan.. can you tell him that we're not holding him here just solely because he's a sorceror? He was probably here due to him being in close proximity with the king, like the others here."
-    "Morgan spoke to Vidir, who seemed to relax a bit."
-    v "I... I am sorry. I wish you luck... to find the killer."
-    "Aureliene nodded, trying to hold back her tears."
-    a "We will find the killer. And bring him to justice."
+    abc "I bet you will. You royalty always treat us like crap."
+    a "Enough."
+    "Both men stopped arguing, instead turning to look at Aureliene. Arden coughed."
+    ar "If you are done, I'll introduce this man. His name is Vidir, a servant for one of the Galladorian lords. However, there has been reason to believe that he is.. a mage."
+    "Aureliene gasped in surpsise."
+    a "A mage?! I thought... they were dead..?"
+    v "They are. I'm the last one."
+    "All eyes turned to Vidir again."
+    
 
     scene bg dinner_room
     "The lunch was especially awkward. With no one to occupy the head chair- the chair that belonged to the king- the room felt much more poignant."
@@ -495,34 +482,21 @@ label end_menu:
 
     label speak_lunch
     scene bg dinner_room
-    a "Vidir... may I ask you something?"
-    "Vidir seemed to tense. But he nodded."
-    v "Yes, My lady."
-    a "How... how did you control the magic..? I've always wondered..."
-    v "Ah... er..."
-    "Vidir seems to steel himself, still looking nervous."
-    v "It's... it's like breath. Easy. Slow. I..."
-    "Vidir looks at his hand, and the blue mist emamating from it."
-    "He looks at Morgan, then back down at his hands again. Morgan looks ot him, bumping his shoulder with his, saying something to Vidir in Serathian. Vidir replies in a quiet tone."
-    mr "He's saying that he was trained at a young age to harness magic. If they don't do it properly... it can lead to death. That's why the first generations of magesmiths died."
-    "Vidir sighed."
-    mr "That's not in the stories."
-    a "No... not at all."
-    "The table went silent again."
-    v "I... I apologize. I did not mean to make you uncomfortable, My lady."
-    a "No... it's alright. I just... I've never met a sorceror before. It's... fascinating."
-    v "Thank you, My lady."
-    "Aureline sighed."
-    a "I've just never thought about... how magic works, nor about who the people are using it."
-    "Morgan nodded, picking at his food."
-    mr "Yes... it's easy to forget that behind the magic, there are people. Just like you and me."
-    a "Yes..."
-    "Aureliene looked down at her food, poking at it with her fork. She looked back at Ren, who was standing at Arden's side, looking as stoic as ever."
-    "Vidir murmured something to Morgan, who then choked on his food."
-    a "What is it?"
-    "Aureliene looked at them both, confused."
-    mr "Nothing. Nothing at all."
-    "Servants continue "
+    "Vidir didn't touch his food. Ren and Arden stood off to the side, near the door of the dining room."
+    "Morgan had excused himself from the table, saying that he didn't have any apetite."
+    a "Will you not eat?"
+    "Vidir looked at her, hesitant."
+    v "No. I will not."
+    a "May I ask why..?"
+    v "I do not wish to eat with my captors. If I do, then I will eat by myself, and something from my homeland. Food like this..."
+    "He looked at the food in disgust."
+    "Aureliene stayed quiet for a moment, deciding to ask another question to avoid the silence."
+    a "What might be your favorite food from your homeland, then?"
+    "Vidir looked at her in surprise for a moment, before his gaze turned neutral again."
+    v "Why would someone of royal heritage wish to know..?"
+    a "I just do, I suppose. For no particular reason. Would you mind telling me?"
+    "Vidir looked down at his food for a moment."
+    v "There's a special soup that is made in my homeland. Made with many diferent herbs. They might be a little rare to find."
 
 
 
@@ -530,10 +504,13 @@ label end_menu:
 
 
 
-
-
-
-
+    v "I had heard stories of your kindness, your highness. I' am glad to see that they are true. Your friend on the other hand..."
+    "Aureliene smiled a bit."
+    a "Please, pay no mind to his words. He can be rude at times, but he doesn't mean it. As as to what you said about the royals capturing your kind... it wasn't him. You understand, no?"
+    v "...I suppose. It might not have been him... but his relatives slaughtered mine. All because we look different."
+    "Aureliene stayed quiet."
+    v "I don't resent him. I know it's not his fault. But he clearly seems to hate me."
+    a "I don't think he hates you... if anything"
 
 
 
@@ -696,13 +673,21 @@ label end_menu:
 
 
 
+    "Morgan couldn't sleep that night. Taking a lamp from his bedside, he got up, walking to the veranda of the balcony."
+    "Vidir was there too. He froze."
 
 
 
 
 
-
-
+    v "Please don't do this."
+    "Vidir's voice broke."
+    m "Please. It's the least I could do."
+    v "Morgan..."
+    "Vidir whispered his name. It was almost Morgan's undoing/"
+    "Please... let me just do this. For both of us. I promise you... nothing will happen to you again."
+    "Tears slipped down Vidir's cheeks as Morgan leaned close, and kissed him."
+    "They held each other tightly under the rain."
 
 
 
